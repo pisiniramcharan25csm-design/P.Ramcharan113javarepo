@@ -1,0 +1,27 @@
+class A
+{
+	int i=10;
+	int j=20;
+	void m()
+	{
+		System.out.print(i+j);
+	}
+}
+class B extends A
+{
+	void m1()
+	{
+		System.out.println(i+j);
+	}
+}
+class inheritance
+{
+	public static void main(String[] args)
+	{
+		B b = new B();
+		System.out.println(b.i);
+		System.out.println(b.j);
+		b.m1();
+		b.m();
+	}
+}
